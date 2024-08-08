@@ -1,0 +1,317 @@
+/* Import Google font - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar {
+    background: #3498db;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 1.75rem;
+    color: #fff;
+  }
+
+h1 {
+
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 18px 0;
+
+}
+
+.container {
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+
+.weather-input {
+    width: 550px;
+}
+
+.weather-input input {
+    height: 46px;
+    width: 100%;
+    outline: none;
+    font-size: 1.07rem;
+    padding: 0 17px;
+    margin: 10px 0 20px 0;
+    border-radius: 4px;
+
+}
+
+.weather-input input:focus {
+    padding: 0 16px;
+}
+
+.weather-input .separator {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-input .separator::before {
+    content: "or";
+    font-size: 1.18rem;
+    padding: 0 15px;
+    margin-top: -4px;
+
+}
+
+.weather-input button {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: 0.2s ease;
+}
+
+.weather-data {
+    width: 100%;
+}
+
+.weather-data .current-weather {
+    border-radius: 5px;
+    padding: 20px 70px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-weather h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.weather-data h6 {
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.current-weather .icon {
+    text-align: center;
+}
+
+.current-weather .icon img {
+    max-width: 120px;
+    margin-top: -15px;
+}
+
+.current-weather .icon h6 {
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+
+.days-forecast h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.days-forecast .weather-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.weather-cards .card {
+    padding: 18px 16px;
+    list-style: none;
+    width: calc(100% / 5);
+    border-radius: 5px;
+}
+
+.weather-cards .card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.weather-cards .card img {
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+}
+#toggleButton {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+
+@media (max-width: 1400px) {
+    .weather-data .current-weather {
+        padding: 20px;
+    }
+
+    .weather-cards {
+        flex-wrap: wrap;
+    }
+
+    .weather-cards .card {
+        width: calc(100% / 4 - 15px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .weather-cards .card {
+        width: calc(100% / 3 - 15px);
+    }
+}
+
+@media (max-width: 950px) {
+    .weather-input {
+        width: 450px;
+    }
+
+    .weather-cards .card {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 1.45rem;
+        padding: 16px 0;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .weather-input {
+        width: 100%;
+    }
+
+    .weather-data h2 {
+        font-size: 1.35rem;
+    }
+}
+
+.light {
+    background: #F5F5F5;
+  color: #333;
+}
+
+.light h1 {
+    background: #3498db;
+    color: #fff;
+}
+
+.light .weather-input input {
+    border: 1px solid #ccc;
+  color: #333;
+  background: #fff;
+}
+
+.light .weather-input input:focus {
+    border: 2px solid #3498db;
+}
+
+.light .weather-input .separator {
+    background: #ddd;
+}
+
+.light .weather-input .separator::before {
+    color: #666;
+    background: #F5F5F5;
+}
+
+.light .weather-input button {
+    color: #fff;
+    background: #3498db;
+}
+.light .weather-input button:hover {
+    background: #2980b9;
+}
+
+.light .weather-input .location-btn {
+    background: #6C757D;
+}
+
+.light .weather-input .location-btn:hover {
+    background: #5c636a;
+}
+.light .weather-data .current-weather {
+    color: #fff;
+    background: #3498db;
+}
+.light .weather-cards .card {
+    color: #fff;
+    background: #6C757D;
+}
+.dark nav {
+    background: #34495E;
+  }
+  
+  .light nav {
+    background: #3498db;
+  }
+.dark {
+    background: #2C3E50;
+    color: #ECF0F1;
+}
+
+.dark h1 {
+    background: #34495E;
+    color: #ECF0F1;
+}
+
+.dark .weather-input input {
+    border: 1px solid #485460;
+    color: #ECF0F1;
+    background: #2C3E50;
+}
+
+.dark .weather-input input:focus {
+    border: 2px solid #34495E;
+}
+
+.dark .weather-input .separator {
+    background: #485460;
+}
+
+.dark .weather-input .separator::before {
+    color: #7F8C8D;
+    background: #2C3E50;
+}
+
+.dark .weather-input button {
+    color: #ECF0F1;
+    background: #34495E;
+}
+.dark .weather-input button:hover {
+    background: #2C3A4A;
+}
+
+.dark .weather-input .location-btn {
+    background: #485460;
+}
+
+.dark .weather-input .location-btn:hover {
+    background: #3E4750;
+}
+.dark .weather-data .current-weather {
+    color: #ECF0F1;
+    background: #34495E;
+}
+.dark .weather-cards .card {
+    color: #ECF0F1;
+    background: #485460;
+}
